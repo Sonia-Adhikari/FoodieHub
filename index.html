@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FoodieHub Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome CDN for hamburger icon -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="#" class="logo" aria-label="FoodieHub Homepage">
+        <!-- Fork and Knife SVG Icon -->
+        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" width="24" height="24" fill="#f46300">
+          <path d="M20 2c-2 5-3 9-3 12-2-4-5-6-5-6S6 14 6 20c0 5 7 6 7 6v24" stroke="#f46300" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M43 4l5 56" stroke="#f46300" stroke-width="4" stroke-linecap="round" />
+          <path d="M54 55c-9-5-12-16-12-16" stroke="#f46300" stroke-width="4" fill="none" stroke-linecap="round" />
+          <path d="M59 59L49 43" stroke="#f46300" stroke-width="4" stroke-linecap="round" />
+        </svg>
+        FoodieHub
+      </a>
+      <nav id="navbar" class="nav">
+        <ul>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#reservations" class="nav-link">Reservations</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Home Section -->
+<section class="hero" id="home" role="region" aria-label="Welcome section">
+  <div class="hero-content">
+    <h1>Welcome to <span class="highlight">FoodieHub</span></h1>
+    <p>Experience culinary excellence with our carefully crafted dishes, made from the finest ingredients and served in an elegant atmosphere.</p>
+    <div class="hero-buttons">
+      <button class="btn btn-primary" id="view-menu-btn">View Menu</button>
+      <button class="btn btn-secondary" id="reserve-btn">Make a Reservation</button>
+    </div>
+  </div>
+</section>
+
+    <!-- Menu Section -->
+<section id="menu" class="menu-section">
+  <h2>Our Menu</h2>
+  <div class="menu-grid">
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80"alt="Margherita Pizza">
+      <h3>Margherita Pizza</h3>
+      <p>Classic cheese pizza with tomato sauce and fresh basil.</p>
+      <span class="price">₹299</span>
+    </div>
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=800&q=80" alt="Pasta Alfredo">
+      <h3>Pasta Alfredo</h3>
+      <p>Creamy Alfredo pasta with parmesan and herbs.</p>
+      <span class="price">₹349</span>
+    </div>
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80" alt="Veg Burger">
+      <h3>Veg Burger</h3>
+      <p>Loaded veggie patty with lettuce, tomato & special sauce.</p>
+      <span class="price">₹199</span>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews Section -->
+<section id="reviews" class="reviews-section">
+  <h2>Customer Reviews</h2>
+  <div class="reviews-grid">
+    <div class="review-card">
+      <p>“Absolutely delicious food! The ambience was perfect and the staff were so friendly.”</p>
+      <h4>– Priya Sharma</h4>
+    </div>
+    <div class="review-card">
+      <p>“The pizza was fresh, cheesy, and full of flavor. Definitely coming back again!”</p>
+      <h4>– Arjun Mehta</h4>
+    </div>
+    <div class="review-card">
+      <p>“Fast service, cozy atmosphere, and the best pasta I’ve ever had.”</p>
+      <h4>– Neha Verma</h4>
+    </div>
+  </div>
+</section>
+
+<!-- Reservations Section -->
+<section id="reservations" class="reservation-section">
+  <h2>Book a Table</h2>
+  <form id="reservation-form" class="reservation-form" onsubmit="event.preventDefault(); alert('Reservation submitted!')">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <input type="number" placeholder="Number of Guests" min="1" required />
+    <input type="date" required />
+    <button type="submit" class="btn btn-primary">Reserve Now</button>
+  </form>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <h2>Contact Us</h2>
+  <p>📍 123 Foodie Street, Delhi, India</p>
+  <p>📞 +91 98765 43210</p>
+  <p>📧 contact@foodiehub.com</p>
+
+  <div class="social-links">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+  </div>
+</section>
+
+  </main>
+</body>
+</html>
